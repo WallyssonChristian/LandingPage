@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link rel="icon" href="./assets/favicon96.png" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./styles/styles.css">
+    <title>WallyssonAraujo</title>
+</head>
+
+<body>
+    <header id="menu" class="menu_container flex">
+        <h1 id="my_name">Wallysson Araujo</h1>
+        <div>
+            <nav>
+                <ul class="menu_lista flex">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        
+        <section id="home" class="home_container">
+            <article id="home-texto" class="home_content">
+                <h4>Bem Vindo ao meu Universo</h4>
+                <h1>"Isso não foi feito de uma IA!"</h1>
+                <p>É o que uma IA diria...</p>
+
+                <a class="btn" target="_blank" href="https://github.com/WallyssonChristian">Explore</a>
+            </article>
+
+            <article id="home-imagem" class="home_content">
+                <img class="home_content_img" src="./assets/Code typing.gif" alt="Capacete de Astronauta Animado">
+            </article>
+        </section>
+
+        <section id="sobre" class="sobre_container">
+            <img src="https://avatars.githubusercontent.com/u/21178527?v=4"
+                alt="Foto do Perfil do Github - Wallysson Christian">
+
+            <article id="sobre_texto">
+                <h1>"Who am I?" You may ask...</h1>
+                <p>
+                    Amante de tecnologia e fascinado pelas possibilidades que ela gera. Estudando sobre IA,
+                    machine learning, ciência de dados com Python e tratamento de dados. Atualmente, dedicado
+                    a um bootcamp de Java Full Stack pela Generation, a procura de oportunidades ao mercado de
+                    desenvolvimento.
+                </p>
+
+                <div id="sobre-github" class="sobre_github flex">
+                    <a class="btn" href="https://github.com/WallyssonChristian">Github</a>
+                    <p>17 Seguidores</p>
+                    <p>19 Repositórios</p>
+                </div>
+
+            </article>
+        </section>
+
+        <section id="contato" class="contato_container">
+            <article id="contato-texto" class="contato_content">
+                <h4>Fale Comigo</h4>
+                <p>O site continua em desenvolvimento, mas se tiver qualquer dúvida ou sugestão de melhoria, entre em
+                    contato comigo, seja em alguma das minhas redes ou através do formulário.</p>
+
+                <div id="redes-sociais" class="social_container flex">
+                    <a href="https://www.linkedin.com/in/wallysson-araujo/">
+                        <img class="social_icon" src="https://img.icons8.com/ios/500/linkedin.png"
+                            alt="Logo do LinkedIn" />
+                    </a>
+                    <a href="https://github.com/WallyssonChristian">
+                        <img class="social_icon" src="https://img.icons8.com/ios/500/github--v1.png"
+                            alt="Logo do Github" />
+                    </a>
+                    <a href="https://http.dog/404.jpg">
+                        <img class="social_icon" src="https://img.icons8.com/ios/500/instagram-new--v1.png"
+                            alt="Logo do Instagram" />
+                    </a>
+                </div>
+            </article>
+
+            <form action="" method="POST">
+                <input type="hidden" name="_next" value="">
+                <input type="hidden" name="_captcha" value="false">
+
+                <label for="nome"><strong>Nome: </strong></label>
+                <input id="nome" type="text" name="name" placeholder="Digite seu nome" required>
+
+                <label for="email"><strong>Email: </strong></label>
+                <input id="email" type="email" name="email" placeholder="Digite seu email" required>
+
+                <label for="subject"><strong>Assunto: </strong></label>
+                <input id="subject" type="text" name="subject" placeholder="Digite o título da mensagem" required>
+
+                <label for="message"><strong>Mensagem: </strong></label>
+                <textarea id="message" name="message" placeholder="Digite sua mensagem" required></textarea>
+
+                <button class="btn" type="submit">Enviar</button>
+                <div id="mensagem-sucesso" style="display: none;">
+                    <p>O formulário foi enviado com sucesso!</p>
+                </div>
+            </form>
+            
+        </section>
+    </main>
+
+    <footer>
+        Feito por Wallysson Araujo 2024
+    </footer>
+    <script src="Scripts/script.js" defer></script>
+</body>
+
+</html>
