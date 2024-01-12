@@ -14,7 +14,7 @@
 
 /* Definindo "variaveis" de cor*/
 :root {
-    --purple-500: #6b36c8;
+    --orange-500: #BE5504;
 
     --cyan-500: #00FFFF;
 
@@ -38,6 +38,11 @@ html {
 body {
     background: var(--black-800);
     color: var(--white);
+}
+
+#my_name{
+    color: #00FFFF;
+    font-size: 32px;
 }
 
 button,
@@ -116,7 +121,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .menu_container a:hover {
-    color: var(--purple-500);
+    color: var(--orange-500);
 }
 
 .menu_content {
